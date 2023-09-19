@@ -1,0 +1,43 @@
+@import url('reset.css');
+
+
+.title {
+  color: darkgrey;
+}
+
+p {
+  color: lightslategrey;
+}
+
+.author {
+  color: fuchsia;
+}
+
+a {
+  color: greenyellow;
+}
+
+.text {
+  color: lightcyan;
+}
+
+#header-first {
+  color: aqua;
+}
+
+div.text {
+  color: chartreuse;
+}
+
+.page__main.main {
+  color: lightsalmon;
+}
+
+.first-paragraph,
+.third-paragraph {
+  color: lightseagreen;
+}
+
+[class*="__container"]{
+	color: red;
+}
