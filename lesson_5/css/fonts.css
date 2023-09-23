@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@400;600;700&display=swap');
+
+@font-face {
+	font-family: "Harmond";
+	src: url("../fonts/harmond-sembditacond.woff2") format("woff2"), 
+			 url("../fonts/harmond-sembditacond.woff") format("woff");
+	font-display: swap;
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Harmond";
+	src: url("../fonts/harmond-extbditaexp.woff2") format("woff2"), 
+			 url("../fonts/harmond-extbditaexp.woff") format("woff");
+	font-display: swap;
+	font-weight: 800;
+	font-style: normal;
+}
