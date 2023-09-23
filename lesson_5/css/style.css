@@ -80,3 +80,14 @@ span {
   text-transform: uppercase;
   word-spacing: 5px;
 }
+
+.nobel {
+  font-family: "Nobile";
+  font-weight: 400;
+  font-style: italic;
+}
+.sheets {
+  font-family: "Harmond";
+	font-weight: 800;
+	font-style: normal;
+}

@@ -17,3 +17,30 @@
 	font-weight: 800;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: "Nobile";
+	src: url("../fonts/nobile-bold.woff2") format("woff2"), 
+			 url("../fonts/nobile-bold.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Nobile";
+	src: url("../fonts/nobile-italic.woff2") format("woff2"), 
+			 url("../fonts/nobile-italic.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Nobile";
+	src: url("../fonts/nobile-medium.woff2") format("woff2"), 
+			 url("../fonts/nobile-medium.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
