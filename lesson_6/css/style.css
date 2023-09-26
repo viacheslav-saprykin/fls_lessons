@@ -128,7 +128,10 @@
   padding-bottom: 35px;
 }
 
-.thirdBlock__textBlock {
+.thirdBlock {
+  margin-left: 25px;
+}
+.thirdBlockTitle__textBlock {
   display: inline-block;
   text-align: left;
   max-width: 563px;
@@ -158,7 +161,7 @@
   margin-bottom: 25px;
 }
 
-.thirdBlock__textBlock--text {
+.thirdBlockTitle__textBlock--text {
   color: #474747;
   font-family: 'Inter', sans-serif;
   font-size: 20px;
@@ -181,24 +184,70 @@
   max-height: 100%;
 }
 
+.fourthBlock__wrapper {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+  margin-left: 25px;
+}
+
 .kyivtext {
   overflow: scroll;
   height: 100px;
-  max-width: 750px;
+  max-width: 450px;
   color: #D06B00;
+  text-align: justify;
+  vertical-align: top;
+  font-size: 20px;
+  margin-right: 25px;
 }
 
 .kyivtextmore {
-  max-width: 900px;
-  text-align: right;
+  max-width: 550px;
   overflow: auto;
   color: cadetblue;
   height: 200px;
+  font-size: 20px;
+  text-align: justify;
 }
 
 .fourthBlock {
   margin-bottom: 100px;
 }
+
+.fifthBlock {
+  margin-bottom: 25px;
+  font-size: 0;
+  margin-left: 25px;
+}
+
+.fifthBlock__one {
+  font-size: 20px;
+  display: inline-block;
+  max-width: 300px;
+  background-color: violet;
+  margin-right: 25px;
+  text-align: justify;
+}
+
+.fifthBlock__two {
+  display: inline-block;
+  max-width: 300px;
+  background-color: yellowgreen;
+  font-size: 20px;
+  margin-right: 25px;
+  text-align: justify;
+}
+
+.fifthBlock__three {
+  display: inline-block;
+  max-width: 300px;
+  background-color: pink;
+  font-size: 20px;
+  margin-right: 25px;
+  text-align: justify;
+}
+
 .footerBlock {
   font-size: 35px;
   text-align: center;
