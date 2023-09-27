@@ -1,158 +1,138 @@
 @import url("fonts.css");
 @import url("reset.css");
 
-.header__title {
-  font-size: 40px;
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.header__title
+.mainMenu,
+.headline,
+.exercise,
+.sectionWhy__text_color,
+.benefits__text {
   font-family: 'Poppins', sans-serif;
   color: black;
+}
+
+.header__title {
+  font-size: 40px;
   margin-bottom: 30px;
+  padding: 25px;
 }
 
 .mainMenu {
   font-size: 20px;
-  font-family: 'Poppins', sans-serif;
-  color: black;
-  margin-bottom: 10px;
+  padding: 30px;
+}
+
+.headline {
+  color: #37393F;
+  font-weight: 600;
+  line-height: 1.27
+}
+
+.first {
+  max-width: 700px;
+	margin: 0 auto;
+	margin-bottom: 30px;
 }
 
 .exercise {
-  font-family: 'Poppins', sans-serif;
   font-size: 35px;
-  color: black;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   text-align: center;
   text-transform: uppercase;
 }
 
-.handshakes-picture {
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
-  margin: 0 0 37px 50px;
+.sectionWhy {
+  margin-bottom: 42px;
 }
-
-.headline {
-  font-family: 'Poppins', sans-serif;
-  color: #37393F;
-}
-
-.firstBlock__headline {
+.sectionWhy__headline {
   font-size: 30px;
+  margin-bottom: 3px;
+} 
+
+.sectionWhy__text {
+  color: #7D7D7D;
+  font-size: 18px;
+  line-height: 146.187%;
+}
+
+.sectionWhy__picture{
+  margin-bottom: 37px;
+}
+
+.sectionWhy__text_subtitle {
+  margin-bottom: 42px;
+}
+
+.sectionWhy__text_color {
+  color: #6B77E5;
+  font-size: 20px;
   font-weight: 600;
-  line-height: 1.27;
-  margin-left: 50px;
+  line-height: 127%;
   margin-bottom: 3px;
 }
 
-.text {
-  font-family: 'Inter', sans-serif;
-  color: #7D7D7D;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.46;
-}
-
-.secondTitle {
-  margin-left: 50px;
-  margin-bottom: 42px;
-  max-width: 692px;
-}
-
-.thirdTitle {
-  color: #6B77E5;
-  font-family: 'Poppins', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.27;
-  margin-left: 50px;
-  margin-bottom: 12px;
-  max-width: 692px;
-}
-
-.fourthTitle {
-  margin-left: 50px;
-  max-width: 692px;
-  margin-bottom: 40px;
-}
-
-.secondBlock__textBlock {
-  display: inline-block;
-  margin-left: 29px;
-}
-.workdesk-picture {
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
-  margin: 0 0 37px 50px;
-}
-
-.headlineSecond {
+.benefits__headline {
   font-size: 25px;
-  color: #37393F;
-  font-family: 'Poppins', sans-serif;
-  font-size: 25px;
-  font-weight: 600;
-  line-height: 1.27;
   margin-bottom: 15px;
 }
 
-.secondSection {
+.benefits-picture {
+  max-width: 50%;
+}
+
+.benefits {
+  font-size: 0px;
+}
+
+.benefits__title {
+  max-width: 50%;
+	display: inline-block;
+  padding-left: 30px;
+}
+
+.benefits__text {
   color: #40DDB6;
-  font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 1.27;
-  max-width: 332px;
-  height: 54px;
-  margin-bottom: 24px;
+  margin-bottom: 21px;
+  
 }
-
-.secondBlock__textList {
-  max-width: 313px;
-  padding-bottom: 30px;
-}
-.secondBlock__textList--item--one,
-.secondBlock__textList--item--two,
-.secondBlock__textList--item--three {
-  padding-bottom: 30px;
+.benefits__textList {
   color: #7D7D7D;
-  font-family: 'Inter', sans-serif;
   font-size: 18px;
   font-weight: 400;
+  line-height: normal;
 }
 
-.secondBlock__textList--item--one,
-.secondBlock__textList--item--two {
-  padding-bottom: 35px;
+.benefits__item_one,
+.benefits__item_two {
+  margin-bottom: 25px;
 }
 
-.thirdBlock {
-  margin-left: 25px;
-}
-.thirdBlockTitle__textBlock {
-  display: inline-block;
-  text-align: left;
-  max-width: 563px;
-  margin-right: 38px;
+.jewels {
+	max-width: 1170px;
+	margin: 30px auto;
 }
 
-.image-wrapper {
-  display: inline-block;
-  vertical-align: top;
-  font-size: 0px;
-  margin-bottom: 140px;
+.jewels__text {
+  max-width: 50%;
+	display: inline-block;
 }
 
-.headlineThird {
+.jewels__title {
   color: #D06B00;
-  font-family: 'Inter', sans-serif;
   font-size: 28px;
   font-weight: 400;
   margin-bottom: 13px;
 }
-.headlineTitle {
+
+.jewels__headline {
   color: #0E333D;
   font-family: 'DM Serif Text', serif;
   font-size: 59px;
@@ -161,91 +141,80 @@
   margin-bottom: 25px;
 }
 
-.thirdBlockTitle__textBlock--text {
+.jewels__image {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0px;
+  margin-bottom: 30px;
+}
+
+.jewels__subtitle {
   color: #474747;
-  font-family: 'Inter', sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 1.8;
   max-width: 563px;
   height: 232px;
 }
-.headlineTitle--one {
+
+.jewels__image_one {
   margin-right: 22px;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
-}
-.headlineTitle--two {
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
 }
 
-.fourthBlock__wrapper {
+.third {
+  margin-bottom: 100px;
+}
+
+.third__wrapper {
   display: inline-block;
   vertical-align: top;
   font-size: 0;
   margin-left: 25px;
+  font-size: 20px;
+  text-align: justify;
 }
 
-.kyivtext {
+.third__text-one {
   overflow: scroll;
   height: 100px;
   max-width: 450px;
   color: #D06B00;
-  text-align: justify;
   vertical-align: top;
-  font-size: 20px;
   margin-right: 25px;
 }
 
-.kyivtextmore {
+.third__text-two {
   max-width: 550px;
   overflow: auto;
   color: cadetblue;
   height: 200px;
-  font-size: 20px;
-  text-align: justify;
 }
 
-.fourthBlock {
-  margin-bottom: 100px;
-}
-
-.fifthBlock {
+.fourth {
   margin-bottom: 25px;
   font-size: 0;
   margin-left: 25px;
+  font-size: 20px;
+  margin-right: 25px;
+  text-align: justify;
 }
 
-.fifthBlock__one {
-  font-size: 20px;
+.fourth__title_one {
   display: inline-block;
   max-width: 300px;
   background-color: violet;
-  margin-right: 25px;
-  text-align: justify;
 }
 
-.fifthBlock__two {
+.fourth__title_two {
   display: inline-block;
   max-width: 300px;
   background-color: yellowgreen;
-  font-size: 20px;
-  margin-right: 25px;
-  text-align: justify;
 }
 
-.fifthBlock__three {
+.fourth__title_three {
   display: inline-block;
   max-width: 300px;
   background-color: pink;
-  font-size: 20px;
-  margin-right: 25px;
-  text-align: justify;
 }
 
 .footerBlock {
@@ -254,5 +223,4 @@
   margin-bottom: 100px;
   color: rgba(0, 128, 0, 0.221);
   height: 100px;
-  font-family: 'Inter', sans-serif;
-}
+} 
