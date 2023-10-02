@@ -105,7 +105,7 @@ body {
 
 .jewels__headline {
   color: #0E333D;
-  font-family: 'DM Serif Text', sans-serif;
+  font-family: 'DM Serif Text', serif;
   font-size: 59px;
   font-weight: 400;
   line-height: 1.465;
@@ -194,4 +194,4 @@ body {
   margin-bottom: 100px;
   color: rgba(0, 128, 0, 0.221);
   height: 100px;
-} 
+}
