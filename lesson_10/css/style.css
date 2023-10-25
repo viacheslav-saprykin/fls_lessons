@@ -1,0 +1,261 @@
+@import url('fonts.css');
+@import url('reset.css');
+
+body {
+  background: rgb(200,194,194);
+  background: linear-gradient(90deg, rgba(200,194,194,1) 15%, rgba(203,221,221,1) 54%);
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  padding: 50px 15px 0px 15px;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  font-weight: 700;
+}
+
+.container {
+  padding: 50px 15px 150px 15px;
+	max-width: 1680px;
+	margin: 0 auto;
+  min-height: 1000px;
+  max-height: 2000px;
+  background-image: url("../img/01-image.webp");
+  background-repeat: no-repeat;
+}
+
+.header-image-text,
+.header-image-loc-pic,
+.header-image-mail-pic,
+.header-image-time-pic,
+.header-image-insta-pic,
+.header-image-fb-pic,
+.header-image-tw-pic,
+.header-image-pint-pic,
+.header-image-logo-pic,
+.header-image-play-pic,
+.header-image-check-pic,
+.header-image-educ-pic,
+.header-image-champ-pic,
+.header-image-brandOne-pic,
+.header-image-brandTwo-pic,
+.first-coloumn,
+.second-coloumn,
+.header-image-brandThree-pic,
+.header-image-brandFour-pic,
+.header-image-brandFive-pic,
+.header-image-work-pic,
+.header-image-static-pic,
+.header-image-docum-pic,
+.header-image-build-pic,
+.header-image-finance-pic,
+.header-image-checkTwo-pic,
+.header-image-workers-pic {
+  display: inline-block;
+}
+
+.header-image-loc-pic {
+  background: url("../img/02-image.svg") no-repeat;
+  width: 40px;
+  height: 40px;
+  background-position: 15px 15px;
+}
+
+.header-image-mail-pic {
+  background: url("../img/03-image.svg") no-repeat;
+  width: 40px;
+  height: 40px;
+  background-position: 15px 20px;
+}
+
+.header-image-time-pic {
+  background: url("../img/04-image.svg") no-repeat;
+  width: 40px;
+  height: 40px;
+  background-position: 15px 20px;
+}
+
+.header-image-insta-pic {
+  background: url("../img/05-image.svg") no-repeat;
+  width: 40px;
+  height: 40px;
+  background-position: 15px 20px;
+}
+
+.header-image-fb-pic {
+  background: url("../img/06-image.svg") no-repeat;
+  width: 40px;
+  height: 40px;
+  background-position: 15px 20px;
+}
+
+.header-image-tw-pic {
+  background: url("../img/07-image.svg") no-repeat;
+  width: 40px;
+  height: 40px;
+  background-position: 15px 20px;
+}
+
+.header-image-pint-pic {
+  background: url("../img/08-image.svg") no-repeat;
+  width: 40px;
+  height: 40px;
+  background-position: 15px 20px;
+}
+
+.header-image-logo-pic {
+  background: url("../img/09-image.svg") no-repeat;
+  width: 220px;
+  height: 50px;
+  background-position: 15px 20px;
+}
+
+.header-image-play-pic {
+  background: url("../img/10-image.png") no-repeat;
+  width: 80px;
+  height: 80px;
+  background-position: 15px 20px;
+}
+
+.header-image-check-pic {
+  background: url("../img/13-image.png") no-repeat;
+  width: 50px;
+  height: 50px;
+  background-position: 15px 23px;
+}
+
+.header-image-educ-pic {
+  background: url("../img/14-image.png") no-repeat;
+  width: 50px;
+  height: 70px;
+  background-position: 15px 30px;
+}
+
+.header-image-champ-pic {
+  background: url("../img/15-image.png") no-repeat;
+  width: 50px;
+  height: 70px;
+  background-position: 15px 30px;
+}
+
+.header-image-brandOne-pic {
+  background: url("../img/16-image.svg") no-repeat;
+  width: 160px;
+  height: 65px;
+  background-position: 15px 20px;
+}
+
+.header-image-brandTwo-pic {
+  background: url("../img/17-image.svg") no-repeat;
+  width: 160px;
+  height: 120px;
+  background-position: 15px 20px;
+}
+
+.header-image-brandThree-pic {
+  background: url("../img/18-image.svg") no-repeat;
+  width: 200px;
+  height: 70px;
+  background-position: 15px 25px;
+}
+
+.header-image-brandFour-pic {
+  background: url("../img/19-image.svg") no-repeat;
+  width: 200px;
+  height: 70px;
+  background-position: 15px 35px;
+}
+
+.header-image-brandFive-pic {
+  background: url("../img/20-image.svg") no-repeat;
+  width: 150px;
+  height: 110px;
+  background-position: 15px 35px;
+}
+
+.header-image-work-pic {
+  background: url("../img/21-image.svg") no-repeat;
+  width: 100px;
+  height: 110px;
+  background-position: 15px 35px;
+}
+
+.header-image-static-pic {
+  background: url("../img/22-image.svg") no-repeat;
+  width: 100px;
+  height: 110px;
+  background-position: 15px 35px;
+}
+
+.header-image-docum-pic {
+  background: url("../img/23-image.svg") no-repeat;
+  width: 100px;
+  height: 110px;
+  background-position: 15px 35px;
+}
+
+.header-image-build-pic {
+  background: url("../img/24-image.svg") no-repeat;
+  width: 100px;
+  height: 110px;
+  background-position: 15px 35px;
+}
+
+.header-image-finance-pic {
+  background: url("../img/25-image.svg") no-repeat;
+  width: 100px;
+  height: 110px;
+  background-position: 15px 35px;
+}
+
+.header-image-checkTwo-pic {
+  background: url("../img/26-image.svg") no-repeat;
+  width: 50px;
+  height: 70px;
+  background-position: 15px 40px;
+}
+
+.header-image-friend-image {
+  width: 50%;
+}
+
+.header-image-friendTwo-image {
+  width: 45%;
+}
+
+.header-image-text {
+  font-size: 28px;
+}
+
+.header-image-text-play {
+  vertical-align: baseline;
+}
+
+.first-coloumn,
+.second-coloumn {
+  max-width: 800px;
+  vertical-align: top;
+}
+
+.header-image-workers-pic,
+.header-image-workers-text,
+.header-image-friend-pic,
+.header-image-friendTwo-pic {
+  display: inline-block;
+  max-width: 400px;
+}
+
+.header-image-workers-image {
+  max-width: 60%;
+}
+
+.footer {
+  margin: 0 auto;
+  font-size: 40px;
+  background-color: yellow;
+  max-width: 777px;
+  text-align: center;
+  outline: dashed 1px black;
+  color: lightgray;
+}
