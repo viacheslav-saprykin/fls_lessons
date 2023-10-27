@@ -1,0 +1,14 @@
+@import url("reset.css");
+
+body {
+  padding: 50px 25px 50px 25px;
+}
+
+.ownclass-no-bem {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0px 15px 0px 15px;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  font-weight: 700;
+}
