@@ -5,13 +5,82 @@ body {
   padding: 50px 25px 50px 25px;
 }
 
-.footer {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 0px 15px 0px 15px;
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+}
+
+.header {
+  padding: 50px 25px 300px 25px;
+}
+
+.menu__item {
+  display: inline-block;
+  position: relative;
+  margin-right: 35px;
+}
+
+.menu__item:hover .menu-link,
+.sub-menu__item:hover .sub-menu__link {
+  background-color: rgb(230, 230, 128);
+}
+
+.menu__item:hover .sub-menu {
+  visibility: visible;
+}
+
+.third-sub-menu__item:hover .sub-menu__link {
+  background-color: rgb(230, 230, 128);
+}
+
+.sub-menu__item:hover .third-sub-menu {
+  visibility: visible;
+}
+
+.menu {
+  background-color: bisque;
+  color: #37393F;
   text-align: center;
-  font-size: 30px;
-  color: black;
-  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+}
+.sub-menu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  padding-top: 5px;
+  width: 100px;
+  text-align: left;
+  visibility: hidden;
+}
+
+.third-sub-menu {
+  position: absolute;
+  left: 100px;
+  top: 72%;
+  padding-top: 5px;
+  width: 140px;
+  text-align: left;
+  visibility: hidden;
+}
+
+.sub-menu__item,
+.third-sub-menu__item {
+  background-color: #f9f6f6;
+}
+.sub-menu__link,
+.third-sub-menu__link {
+  display: inline-block;
+  padding: 5px;
+}
+
+.sub-menu__link:hover,
+.third-sub-menu__link:hover {
+  background-color: rgb(230, 230, 128);
 }
 
 .section-team {
@@ -25,7 +94,6 @@ body {
 
 .team__card {
   position: relative;
-
 }
 
 .team__card::before {
@@ -61,7 +129,6 @@ body {
 
 .team__card:hover .card__social {
   visibility: visible;
-
 }
 
 .social__insta,
@@ -120,6 +187,10 @@ body {
   z-index: 4;
 }
 
+.long-name {
+  padding: 24px 39px;
+}
+
 .text__name {
   color: #37393F;
   font-family: 'Poppins', sans-serif;
@@ -152,73 +223,94 @@ body {
   margin-right: 31px;
 }
 
-.header {
-  padding: 50px 25px 300px 25px;
-}
-
-.menu__item {
-  display: inline-block;
+.practice {
+  max-width: 1200px;
+  height: 600px;
   position: relative;
-  margin-right: 35px;
 }
-
-.menu__item:hover .menu-link,
-.sub-menu__item:hover .sub-menu__link {
-  background-color: rgb(230, 230, 128);
-}
-
-.menu__item:hover .sub-menu {
-  visibility: visible;
-}
-
-.third-sub-menu__item:hover .sub-menu__link {
-  background-color: rgb(230, 230, 128);
-}
-
-.sub-menu__item:hover .third-sub-menu {
-  visibility: visible;
-}
-
-.menu__list {
-  color: #37393F;
+.practice__block-1,
+.practice__block-2,
+.practice__block-3,
+.practice__block-5 {
+  height: 200px;
+  width: 800px;
   text-align: center;
-  font-family: 'Inter', sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.sub-menu {
-  position: absolute;
-  left: 0;
-  top: 100%;
-  padding-top: 5px;
-  width: 100px;
-  text-align: left;
-  visibility: hidden;
+  text-transform: uppercase;
 }
 
-.third-sub-menu {
+.practice__block-1 {
+  background-color: rgb(228, 77, 77);
+  position: relative;
+  right: 95px;
+  bottom: 1%;
+  z-index: 2;
+}
+.practice__block-2 {
+  background-color: rgb(138, 219, 219);
   position: absolute;
+  top: 80px;
   left: 100px;
-  top: 72%;
-  padding-top: 5px;
-  width: 140px;
-  text-align: left;
-  visibility: hidden;
+}
+.practice__block-3 {
+  background-color: rgb(123, 123, 54);
 }
 
-.sub-menu__item,
-.third-sub-menu__item {
-  background-color: #f9f6f6;
-}
-.sub-menu__link,
-.third-sub-menu__link {
-  display: inline-block;
-  padding: 5px;
+.practice__block-4 {
+  background-color: rgb(213, 213, 137);
+  width: 100px;
+  height: 100px;
 }
 
-.sub-menu__link:hover,
-.third-sub-menu__link:hover {
-  background-color: rgb(230, 230, 128);
+.haloween__image {
+  height: 150px;
+}
+
+.section-fixed__block-5 {
+  position: fixed;
+  top: 150px;
+  left: 1250px;
+}
+
+.footer {
+  padding: 50px 15px 50px 15px;
+}
+
+.footer__text {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  font-weight: 700;
+}
+
+.section-sticky {
+  max-width: 1200px;
+  height: 750px;
+  margin-bottom: 100px;
+}
+.section-sticky__block-1 {
+  height: 250px;
+  width: 300px;
+  background-color: rgb(21, 230, 230);
+}
+.section-sticky__block-2 {
+  position: sticky;
+  top: 0;
+  left: 100px;
+  height: 200px;
+  width: 400px;
+  background-color: rgb(70, 184, 144);
+}
+.section-sticky__block-3 {
+  position: sticky;
+  top: 15px;
+  left: 300px;
+  height: 150px;
+  width: 500px;
+  background-color: rgb(30, 83, 107);
+}
+.section-sticky__block-4 {
+  height: 150px;
+  width: 600px;
+  background-color: rgb(126, 187, 215);
 }
