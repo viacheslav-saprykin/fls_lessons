@@ -3,7 +3,6 @@
 
 body {
   padding: 50px 25px 50px 25px;
-  font-family: 'Poppins', sans-serif;
 }
 
 .footer {
@@ -19,6 +18,32 @@ body {
   max-width: 1220px;
 }
 
+.section-team__item {
+  max-width: 386px;
+  width: 100%;
+}
+
+.team__card {
+  position: relative;
+
+}
+
+.team__card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(107, 119, 229, 0.70);
+  visibility: hidden;
+  z-index: 2;
+}
+
+.team__card:hover::before {
+  visibility: visible;
+}
+
 .card__social {
   font-size: 0;
   position: absolute;
@@ -26,11 +51,28 @@ body {
   left: 50%;
   margin-left: -88px;
   margin-top: -25px;
+  z-index: 3;
+  visibility: hidden;
+}
+
+.team__card:hover::before {
+  visibility: visible;
+}
+
+.team__card:hover .card__social {
+  visibility: visible;
+
 }
 
 .social__insta,
 .social__fb,
 .social__tw {
+  display: inline-block;
+}
+
+.social__insta:hover,
+.social__fb:hover,
+.social__tw:hover {
   display: inline-block;
 }
 
@@ -60,6 +102,14 @@ body {
   height: 50px;
 }
 
+.social__insta:hover .insta__link,
+.social__fb:hover .fb__link,
+.social__tw:hover .tw__link {
+  border: 2px dashed rgb(49, 196, 113);
+  border-radius: 90%;
+  padding: 1px;
+}
+
 .section-team__text {
   background: #FFF;
   max-width: 341px;
@@ -67,12 +117,15 @@ body {
   position: relative;
   top: -132px;
   left: 22px;
-  z-index: 3;
+  z-index: 4;
 }
+
 .text__name {
   color: #37393F;
+  font-family: 'Poppins', sans-serif;
   text-align: center;
   font-size: 25px;
+  font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
@@ -83,4 +136,89 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.35;
+}
+
+.team__list {
+  font-size: 0;
+  
+}
+.team__item {
+  display: inline-block;
+}
+.team__item:nth-child(1),
+.team__item:nth-child(2),
+.team__item:nth-child(4),
+.team__item:nth-child(5) {
+  margin-right: 31px;
+}
+
+.header {
+  padding: 50px 25px 300px 25px;
+}
+
+.menu__item {
+  display: inline-block;
+  position: relative;
+  margin-right: 35px;
+}
+
+.menu__item:hover .menu-link,
+.sub-menu__item:hover .sub-menu__link {
+  background-color: rgb(230, 230, 128);
+}
+
+.menu__item:hover .sub-menu {
+  visibility: visible;
+}
+
+.third-sub-menu__item:hover .sub-menu__link {
+  background-color: rgb(230, 230, 128);
+}
+
+.sub-menu__item:hover .third-sub-menu {
+  visibility: visible;
+}
+
+.menu__list {
+  color: #37393F;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.sub-menu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  padding-top: 5px;
+  width: 100px;
+  text-align: left;
+  visibility: hidden;
+}
+
+.third-sub-menu {
+  position: absolute;
+  left: 100px;
+  top: 72%;
+  padding-top: 5px;
+  width: 140px;
+  text-align: left;
+  visibility: hidden;
+}
+
+.sub-menu__item,
+.third-sub-menu__item {
+  background-color: #f9f6f6;
+}
+.sub-menu__link,
+.third-sub-menu__link {
+  display: inline-block;
+  padding: 5px;
+}
+
+.sub-menu__link:hover,
+.third-sub-menu__link:hover {
+  background-color: rgb(230, 230, 128);
 }
