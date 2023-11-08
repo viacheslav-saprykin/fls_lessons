@@ -1,0 +1,586 @@
+@import url('fonts.css');
+@import url("reset.css");
+
+body {
+  padding: 50px 25px 50px 25px;
+  font-family: 'Inter', sans-serif;
+}
+
+.ownclass-no-bem {
+  padding: 0px 15px 0px 15px;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  font-weight: 700;
+}
+
+.container {
+  padding: 50px 15px 150px 15px;
+	max-width: 1480px;
+	margin: 0 auto;
+}
+
+.section-business__text {
+  max-width: 700px;
+  margin-bottom: 40px;
+}
+.section-business__title {
+  color: #37393F;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.27;
+  margin-bottom: 3px;
+}
+
+.section-business__text p:nth-child(2) {
+  color: #7D7D7D;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.46;
+  text-align: justify;
+  margin-bottom: 42px;
+}
+
+.section-business__text p:nth-child(3) {
+	color: #6B77E5;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.27;
+  margin-bottom: 12px;
+}
+
+.section-business__text p:last-child {
+	color: #7D7D7D;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.46;
+}
+
+.section-benefits {
+  max-width: 700px;
+  font-size: 0;
+  margin-bottom: 50px;
+}
+
+.section-benefits__image {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 29px;
+}
+
+.section-benefits__text {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.section-benefits__text h4:nth-child(1) {
+  color: #37393F;
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.27;
+  margin-bottom: 15px;
+}
+
+.section-benefits__text h5:nth-child(2) {
+  color: #40DDB6;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.27;
+  margin-bottom: 21px;
+}
+
+.section-benefits__text ul:nth-child(3) {
+  color: #7D7D7D;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.section-benefits__text li::before {
+  content: '';
+  background: url('../img/02-Image.svg') 0 0 no-repeat;
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle
+}
+
+.section-benefits__text li:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.section-care {
+  max-width: 680px;
+}
+
+.section-care__text {
+  margin-bottom: 48px;
+}
+
+.section-care__subtitle,
+.section-work__subtitle {
+  color: #37393F;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 16px;
+}
+
+.section-care__subtitle::before,
+.section-work__subtitle::before {
+  background-color: #40DDB6;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  content: '';
+}
+
+.section-care__title,
+.section-work__title,
+.game-title {
+  color: #37393F;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.21;
+  margin-bottom: 10px;
+}
+
+.section-care__paragraph {
+  color: #7D7D7D;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.46;
+  margin-bottom: 48px;
+  }
+
+  .section-care__paragraph p:first-of-type {
+    margin-bottom: 16px;
+  }
+
+  .section-care__block-text {
+    padding: 28px 41px 28px 38px;
+    gap: 10px;
+    border: 1px solid #E3E3E3;
+    margin-bottom: 190px;
+  }
+
+  .section-care__block-text h4:nth-child(1) {
+    color: #37393F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 12px;
+  }
+
+  .section-care__block-text p:nth-child(2) {
+    color: #7D7D7D;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.46;
+    margin-left: 46px;
+  }
+
+  .section-care__block-text:not(:last-child) { 
+    margin-bottom: 31px;
+  }
+
+  .section-care__text h4::before {
+    content: '';
+    background: url('../img/02-Image.svg') 0 0 no-repeat;
+    width: 28px;
+    height: 28px;
+    margin-right: 19px;
+    display: inline-block;
+    vertical-align: middle
+  }
+
+  .section-care__link {
+    display: inline-block;
+    background: #6B77E5;
+    padding: 21px 27px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .section-work {
+    max-width: 1220px;
+    margin-bottom: 138px;
+  }
+
+  .section-work__title,
+  .section-work__subtitle {
+    text-align: center;
+  }
+
+  .section-work__title {
+    margin-bottom: 76px;
+  }
+
+  .section-work__blocks {
+    font-size: 0;
+  }
+  .section-work__blocks-one,
+  .section-work__blocks-two,
+  .section-work__blocks-three {
+    display: inline-block;
+    max-width: 386px;
+    text-align: center;
+    padding: 58px 43px;
+    background-color: #F4F4F4;
+  }
+
+  .section-work__blocks-one,
+  .section-work__blocks-two {
+    margin-right: 31px;
+  }
+
+  .section-work__blocks-one::before {
+    content: "";
+    background: url('../img/03-Image.svg') center no-repeat;
+    width: 72px;
+    height: 72px;
+    display: inline-block;
+    margin-top: -94px;
+    vertical-align: top;
+  }
+
+  .section-work__blocks-two::before {
+    content: "";
+    background: url('../img/04-Image.svg') center no-repeat;
+    width: 72px;
+    height: 72px;
+    display: inline-block;
+    margin-top: -94px;
+    vertical-align: top;
+  }
+
+  .section-work__blocks-three::before {
+    content: "";
+    background: url('../img/05-Image.svg') center no-repeat;
+    width: 72px;
+    height: 72px;
+    display: inline-block;
+    margin-top: -94px;
+    vertical-align: top;
+  }
+
+  .section-work__blocks--title {
+    color: #37393F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.27;
+    margin-bottom: 16px;
+  }
+
+  .section-work__blocks--text {
+    color: #7D7D7D;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.46;
+    margin-bottom: 37px;
+  }
+
+  .section-work__blocks--link {
+    display: inline-block;
+    color: #6B77E5;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+
+  .section-jewellery {
+    max-width: 1600px;
+    font-family: 'Cormorant Infant', serif;
+    font-size: 0;
+    margin-bottom: 150px;
+  }
+
+  .section-jewellery__title {
+    display: inline-block;
+    color: #000;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.15;
+    vertical-align: 209px;
+    margin-right: 23px;
+  }
+
+  .section-jewellery__title:after {
+    content: '';
+    display: block;
+    margin-top: 13px;
+    height: 2px;
+    width: 66%;
+    background-color: #78473B;
+  }
+
+  .section-jewellery__coloumn-two {
+    display: inline-block;
+    margin-right: 55px;
+  }
+
+  .section-jewellery__coloumn-two--rectangle {
+    border: 1px solid #000;
+    height: 380px;
+  }
+
+  .section-jewellery__coloumn-three {
+    display: inline-block;
+  }
+
+  .section-jewellery__coloumn-two--image {
+    margin-left: 10px;
+    margin-top: -370px;
+    width: 334px;
+    background: url('../img/07-Image.webp') 0 0 / cover no-repeat;
+    height: 380px;
+    margin-bottom: 25px;
+  }
+
+  .section-jewellery__coloumn-two h5:nth-child(3),
+  .section-jewellery__coloumn-two p:nth-child(4),
+  .section-jewellery__coloumn-three h5:nth-child(4),
+  .section-jewellery__coloumn-three p:nth-child(5) {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.40;
+  }
+
+  .section-jewellery__coloumn-two h5:nth-child(2) {
+    margin-bottom: 4px;
+  }
+
+  .section-jewellery__coloumn-three--image {
+    margin-left: 10px;
+    margin-top: -370px;
+    width: 334px;
+    background: url('../img/06-Image.webp') 0 0 / cover no-repeat;
+    height: 380px;
+    margin-bottom: 25px;
+  }
+
+  .section-jewellery__coloumn-three h5:nth-child(1) {
+    color: #000;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1.13;
+    margin-bottom: 31px;
+  }
+
+  .link {
+    font-family: 'Poppins', sans-serif;
+    color: green;
+    font-size: 40px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+  }
+  .link-group {
+    margin-bottom: 30px;
+  }
+
+  .link-one:hover {
+    color: rgb(23, 182, 179, 0.667);
+    text-decoration: underline;
+  }
+
+  .link-two:active {
+    color: blue;
+  }
+
+  .link-three:visited {
+    color: rgb(114, 114, 203);
+  }
+
+  .link-four:focus {
+    outline: 3px dotted rgb(151, 49, 149);
+  }
+
+  .link-five:target {
+    outline: 3px dotted rgba(162, 58, 160, 0.63)
+  }
+
+  .section-practice {
+    margin-bottom: 100px;
+  }
+
+  .practice-text {
+    margin-bottom: 40px;
+  }
+
+  .practice-text p:first-child {
+    background-color: #617671;
+  }
+
+  .practice-text p:last-child {
+    background-color: #2ec19f;
+  }
+  .practice-text p:nth-child(1),
+  .practice-text p:nth-child(3) {
+    margin-bottom: 10px;
+  }
+  .practice-text p:nth-child(2) {
+    background-color: #11d8aa;
+    margin-bottom: 10px;
+  }
+
+  .practice-text p:nth-child(even) {
+    font-size: 25px;
+  }
+
+  .practice-text p:nth-child(2n + 1) {
+    color: rgba(143, 4, 27, 0.853);
+  }
+
+  .practice-text p:not(:last-child) {
+    text-align: right;
+  }
+  
+  .practice-pseudoelements {
+    outline: 7px solid orangered;
+  }
+
+  .practice-pseudoelements::before {
+    content: 'CSS Magic switch on';
+    outline: 3px dashed rgba(255, 68, 0, 0.427);
+    font-size: 22px;
+  }
+
+  .practice-pseudoelements::after {
+    display: inline-block;
+    width: 300px;
+    height: 25px;
+    content: 'CSS Magic switch off';
+    outline: 3px dashed rgba(255, 68, 0, 0.427);
+    font-size: 22px;
+  }
+
+  .game {
+    min-height: 650px;
+    text-align: initial;
+    margin-top: 30px;
+    font-size: 0;
+  }
+  
+  .game__line {
+    background: rgba(13, 128, 186, 0.323)
+  }
+
+  .game__line-one {
+    width: 50px;
+    height: 50px;
+  }
+
+  .game__line-two {
+    width: 50px;
+    height: 25px;
+  }
+
+  .game__line-one:hover + .game__line-two,
+  .game__line-two:hover {
+    width: 1080px;
+  }
+
+  .game__line-three {
+    width: 1030px;
+    height: 20px;
+    display: inline-block;
+  }
+
+  .game__line-three-one {
+    visibility: hidden;
+    width: 50px;
+    height: 50px;
+  }
+
+  .game__line-two:hover ~ .game__line-three-one,
+  .game__line-three-one:hover {
+    display: inline-block;
+    visibility: visible;
+  }
+
+  .game__line-three-one:hover {
+    height: 100px;
+  }
+
+  .game__line-four-one {
+    display: inline-block;
+    visibility: hidden;
+    height: 50px;
+    width: 50px;
+  }
+
+  .game__line-three-one:hover ~ .game__line-four {
+    display: inline-block;
+    width: 1030px;
+    height: 50px;
+  }
+
+  .game__line-three-one:hover ~ .game__line-four-one,
+  .game__line-four-one:hover {
+    visibility: visible;
+    display: inline-block;
+  }
+
+  .game__line-four-one:hover {
+    width: 100%;
+  }
+
+  .game__line-five {
+    width: 20px;
+    height: 300px;
+    visibility: hidden;
+  }
+
+  .game__line-four-one:hover ~ .game__line-five {
+    visibility: visible;
+    height: 20px;
+  }
+
+  .game__line-five:hover {
+    visibility: visible;
+    height: 300px;
+  }
+
+  .game__line-six {
+    visibility: hidden;
+    height: 20px;
+    width: 20px;
+    background: rgb(27,218,64);
+    background: linear-gradient(90deg, rgba(27,218,64,1) 0%, rgba(250,234,4,0.7936362044817927) 49%, rgba(27,218,64,1) 100%);
+  }
+
+  .game__line-five:hover ~ .game__line-six,
+  .game__line-six:hover {
+    visibility: visible;
+  }
+
+  .game__line-six:hover {
+    width: 100%;
+    height: 100px;
+  }
+
+  .game-champ {
+    visibility: hidden;
+    text-align: center;
+    height: 500px;
+  }
+
+  .game__line-six:hover ~ .game-champ,
+  .game-champ:hover {
+    visibility: visible;
+    background: url("../img/08-Image.webp") 0 0 / cover no-repeat fixed;
+  }
