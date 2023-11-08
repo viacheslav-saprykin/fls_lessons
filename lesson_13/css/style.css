@@ -4,8 +4,8 @@ body {
   padding: 50px 15px 150px 15px;
 	max-width: 1400px;
   margin: 0 auto;
-  background: rgb(60,230,232);
-  background: linear-gradient(0deg, rgba(60,230,232,1) 0%, rgba(241,198,136,0.9178265056022409) 100%);
+background: rgb(60,230,232);
+background: linear-gradient(0deg, rgba(60,230,232,1) 0%, rgba(209,166,104,0.9056810224089635) 64%);
 }
 
 .wrapper {
@@ -269,7 +269,7 @@ body {
     width: 200px;
     height: 200px;
     background-color: rgba(52, 56, 55, 0.755);
-    border-radius: 30%;
+    border-radius: 10%;
   }
 
   .block__item {
@@ -333,8 +333,8 @@ body {
     padding: 10px;
   }
 
-  .block__item--eight:hover {
-    transform: translate3d(-20px, -20px, -18px);
+  .block-eight:hover {
+    transform: translate3d(-10px, -10px, -18px);
   }
 
   .block__item--nine:hover {
@@ -349,4 +349,3 @@ body {
     font-weight: 700;
      visibility: hidden; /* так задумано :) */
   }
-  
