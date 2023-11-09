@@ -341,8 +341,13 @@ body {
     display: inline-block;
   }
 
+  .section-jewellery__coloumn-three {
+    vertical-align: top;
+  }
+
   .section-jewellery__coloumn-two--image {
     margin-left: 10px;
+    margin-right: -20px;
     margin-top: -370px;
     width: 334px;
     background: url('../img/07-Image.webp') 0 0 / cover no-repeat;
@@ -366,6 +371,7 @@ body {
 
   .section-jewellery__coloumn-three--image {
     margin-left: 10px;
+    margin-right: -20px;
     margin-top: -370px;
     width: 334px;
     background: url('../img/06-Image.webp') 0 0 / cover no-repeat;
