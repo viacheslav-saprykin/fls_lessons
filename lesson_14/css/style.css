@@ -1,0 +1,483 @@
+@import url("reset.css");
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+}
+
+  body { 
+  padding: 50px 25px 150px 25px;
+	max-width: 1400px;
+  margin: 0 auto;
+  background-color: rgb(227, 241, 241);
+}
+
+.section-practice {
+  font-size: 0;
+}
+
+.block {
+  width: 200px;
+  height: 200px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 15%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.block:not(:last-child) {
+	margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.block-one {
+  background-color: rgb(43, 146, 211);
+  
+}
+
+.block-one:hover {
+  background-color: rgb(14, 186, 143);
+  transition-duration: 0.5s;
+}
+
+.block-two {
+  background-color: rgb(43, 146, 211);
+  transition-duration: 2s, 0.9s;
+  transition-property: border-radius, background-color;
+}
+
+.block-two:hover {
+  background-color: rgb(15, 206, 158);
+  border-radius: 40%;
+}
+
+.block-three {
+  transition-duration: 0.5s, 0.3s, 1s;
+  transition-delay: 0s, 0.5s, 0.8s;
+  background-color: rgb(43, 146, 211);
+}
+
+.block-three:hover {
+  width: 220px;
+  height: 220px;
+  background-color: rgb(7, 199, 151);
+}
+
+.block-four {
+  transition-duration: 0.5s, 0.3s, 1s;
+  transition-delay: 0s, 0.5s, 0.8s;
+  background-color: rgb(43, 146, 211);
+}
+
+.block-four:hover {
+  width: 220px;
+  height: 220px;
+  background-color: rgb(7, 199, 151);
+}
+
+.list__item {
+	transform: translate(-100%, 0px);
+	transition-duration: 0.2s;
+  font-size: 20px;
+  color: black;
+  padding: 3px;
+}
+
+.list__item:nth-child(1) {
+	transition-delay: 0.8s;
+}
+.list__item:nth-child(2) {
+	transition-delay: 0.6s;
+}
+.list__item:nth-child(3) {
+	transition-delay: 0.4s;
+}
+.list__item:nth-child(4) {
+	transition-delay: 0.2s;
+}
+.list__item:nth-child(5) {
+	transition-delay: 0.8s 0s;
+}
+
+.list:hover .list__item {
+	transition-duration: 0.5s;
+	transform: translate(0px, 0px);
+}
+
+.list__item:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.block-five {
+  transition-duration: 0.5s;
+  background-color: rgb(43, 146, 211);
+}
+
+.block-five:hover {
+  width: 210px;
+  transition-timing-function: linear;
+  background-color: rgb(7, 199, 151);
+}
+
+.block-animation {
+  width: 200px;
+  height: 200px;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 15%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.block-animation:not(:last-child) {
+	margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.block-animation-one {
+  background-color: rgb(91, 211, 43);
+  animation-name: rotate;
+  animation-duration: 8s;
+  animation-iteration-count: 100;
+}
+
+.block-animation-two {
+  background-color: rgb(91, 211, 43);
+  animation-name: rotate;
+  animation-duration: 8s;
+  animation-iteration-count: 100;
+  animation-direction: alternate;
+}
+
+.block-animation-three {
+  background-color: rgb(91, 211, 43);
+  animation-name: rotate;
+  animation-duration: 8s;
+  animation-iteration-count: 100;
+  animation-direction: alternate-reverse;
+  animation-play-state: running;
+}
+
+.block-animation-one:hover,
+.block-animation-two:hover,
+.block-animation-three:hover {
+  animation-play-state: paused;
+}
+.button {
+	cursor: pointer;
+	background-color: rgb(40, 208, 40);
+	display: inline-block;
+	padding: 15px;
+	border-radius: 15px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	box-shadow: 0px 5px 0px #000;
+	position: relative;
+	top: 0;
+	transition: all 0.2s;
+}
+.button:hover {
+	top: 2px;
+	box-shadow: 0px 3px 0px #000;
+}
+.button:active {
+	top: 5px;
+	box-shadow:
+		0px 0px 0px #000,
+		inset 0px 0px 5px 0px #333;
+}
+
+.section-car {
+  background-color: #b5bcbea9;
+  margin-bottom: 200px;
+  border-radius: 20px;
+  padding: 50px 50px 50px 50px;
+}
+
+.car {
+  width: 600px;
+  height: 200px;
+  background-color: #28485e;
+  position: relative;
+  border-radius: 20px;
+  animation: drive 4s linear infinite;
+  z-index: 2;
+}
+
+.body {
+  width: 300px;
+  height: 50px;
+  background-color: #28485e;
+  position: relative;
+  top: 25px;
+  left: 50px;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.body__front-window {
+  width: 50px;
+  height: 150px;
+  background-color: #3498db;
+  position: absolute;
+  top: 0;
+  left: 380px;
+  border-radius: 10px;
+}
+
+.body__rear-window {
+  width: 50px;
+  height: 150px;
+  background-color: #3498db;
+  position: absolute;
+  top: 0;
+  left: 80px;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.body__roof-window {
+  width: 50px;
+  height: 150px;
+  background-color: #3e6a86;
+  position: absolute;
+  top: 0;
+  left: 280px;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.bamper__front {
+  width: 50px;
+  height: 188px;
+  background-color: #08334f;
+  position: absolute;
+  top: -20px;
+  left: 492px;
+  border-radius: 10px;
+}
+
+.bamper__rear {
+  width: 50px;
+  height: 188px;
+  background-color: #08334f;
+  position: absolute;
+  top: -20px;
+  left: -42px;
+  border-radius: 10px;
+}
+
+.body__door {
+  width: 280px;
+  height: 160px;
+  background-color: #2c3e50;
+  position: absolute;
+  top: 0;
+  left: 100px;
+  border-radius: 10px;
+}
+
+.lamp__left {
+  width: 30px;
+  height: 30px;
+  background-color: #f70338;
+  position: absolute;
+  top: 0;
+  left: -50px;
+  border-radius: 10px;
+}
+
+.lamp__right {
+  width: 30px;
+  height: 30px;
+  background-color: #f70338;
+  position: absolute;
+  top: 110px;
+  left: -50px;
+  border-radius: 10px;
+}
+
+.lamp__left:hover,
+.lamp__right:hover {
+  background-color: #ff6485;
+}
+
+.mirror__left {
+  width: 20px;
+  height: 25px;
+  background-color: #08334f;
+  position: absolute;
+  top: -45px;
+  left: 365px;
+  border-radius: 10px;
+}
+
+.mirror__right {
+  width: 20px;
+  height: 25px;
+  background-color: #08334f;
+  position: absolute;
+  top: 170px;
+  left: 360px;
+  border-radius: 10px;
+}
+
+.headlight__left {
+  width: 50px;
+  height: 30px;
+  background-color: #cfca4a;
+  position: absolute;
+  top: 0;
+  left: 530px;
+  border-radius: 50%;
+}
+
+.headlight__right {
+  width: 50px;
+  height: 30px;
+  background-color: #cfca4a;
+  position: absolute;
+  border-radius: 50%;
+  top: 110px;
+  left: 530px;
+}
+
+.wheel__right {
+  width: 100px;
+  height: 30px;
+  background-color: #0b0b0b;
+  border-radius: 50%;
+  position: absolute;
+  right: 60px;
+  top: 190px;
+  z-index: 2;
+}
+
+.wheel__right-two {
+  width: 100px;
+  height: 25px;
+  background-color: #0b0b0b;
+  border-radius: 50%;
+  position: absolute;
+  right: 60px;
+  top: -15px;
+  z-index: 2;
+}
+
+.wheel__left {
+  width: 100px;
+  height: 30px;
+  background-color: #0b0b0b;
+  border-radius: 50%;
+  position: absolute;
+  top: 190px;
+  left: 60px;
+  z-index: 2;
+}
+
+.wheel__left-two {
+  width: 100px;
+  height: 25px;
+  background-color: #0b0b0b;
+  border-radius: 50%;
+  position: absolute;
+  top: -15px;
+  left: 60px;
+  z-index: 2;
+}
+
+.wheel__spare {
+  width: 65px;
+  height: 100px;
+  background-color: #0b0b0b;
+  border-radius: 50%;
+  position: absolute;
+  top: 45px;
+  left: 10px;
+  z-index: 2;
+}
+
+.wheel__tuning-one {
+  width: 60px;
+  height: 20px;
+  background-color: #efe4e4;
+  border-radius: 50%;
+  position: absolute;
+  top: 193px;
+  left: 80px;
+  z-index: 2;
+}
+
+.wheel__tuning-two {
+  width: 60px;
+  height: 20px;
+  background-color: #efe4e4;
+  border-radius: 50%;
+  position: absolute;
+  top: 193px;
+  left: 460px;
+  z-index: 2;
+}
+
+.wheel__tuning-three {
+  width: 40px;
+  height: 60px;
+  background-color: #efe4e4;
+  border-radius: 50%;
+  position: absolute;
+  top: 65px;
+  left: 23px;
+  z-index: 2;
+}
+
+.road__right {
+  width: 14000px;
+  position: absolute;
+  top: 225px;
+  left: 10px;
+  border: 7px dashed #fff;
+  z-index: 1;
+}
+
+.road__left {
+  width: 14000px;
+  position: absolute;
+  bottom: 220px;
+  left: 1px;
+  border: 7px dashed #fff;
+  z-index: 1;
+}
+.ownclass-no-bem {
+  padding: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  font-weight: 700;
+}
+
+@keyframes drive {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(600px);
+  }
+}
+
+.car:hover {
+  animation-play-state: paused;
+}
