@@ -198,10 +198,20 @@
 }
 
 .section-car {
+  min-width: 1200px;
   background-color: #b5bcbea9;
   margin-bottom: 200px;
   border-radius: 20px;
   padding: 50px 50px 50px 50px;
+
+  border: 7px dashed #fff;
+  z-index: 1;
+}
+
+.section-car:hover {
+  background-color: #5f6364a9;
+  border: 7px dashed #eecdcd;
+  transition: 0.3s;
 }
 
 .car {
@@ -307,8 +317,8 @@
   border-radius: 10px;
 }
 
-.lamp__left:hover,
-.lamp__right:hover {
+.car:hover .lamp__left,
+.car:hover .lamp__right {
   background-color: #ff6485;
 }
 
@@ -335,7 +345,7 @@
 .headlight__left {
   width: 50px;
   height: 30px;
-  background-color: #cfca4a;
+  background-color: #b6b11c;
   position: absolute;
   top: 0;
   left: 530px;
@@ -350,6 +360,26 @@
   border-radius: 50%;
   top: 110px;
   left: 530px;
+}
+
+.headlight__left::before,
+.headlight__right::before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border-radius: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.5s;
+  z-index: 1;
+}
+
+.car:hover .headlight__left::before,
+.car:hover .headlight__right::before {
+  background-color: #c1c189;
 }
 
 .wheel__right {
@@ -440,23 +470,20 @@
   z-index: 2;
 }
 
-.road__right {
-  width: 14000px;
-  position: absolute;
-  top: 225px;
-  left: 10px;
-  border: 7px dashed #fff;
-  z-index: 1;
+.wheel__spare,
+.wheel__tuning-three {
+  animation: rotateWheels 2s linear infinite; /* Оновлена анімація обертання для обох елементів */
 }
 
-.road__left {
-  width: 14000px;
-  position: absolute;
-  bottom: 220px;
-  left: 1px;
-  border: 7px dashed #fff;
-  z-index: 1;
-}
+  @keyframes rotateWheels {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
 .ownclass-no-bem {
   padding: 25px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -481,3 +508,4 @@
 .car:hover {
   animation-play-state: paused;
 }
+
