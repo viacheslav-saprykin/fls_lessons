@@ -97,7 +97,7 @@
 	transition-delay: 0.2s;
 }
 .list__item:nth-child(5) {
-	transition-delay: 0.8s 0s;
+	transition-delay: 0s;
 }
 
 .list:hover .list__item {
@@ -508,4 +508,3 @@
 .car:hover {
   animation-play-state: paused;
 }
-
