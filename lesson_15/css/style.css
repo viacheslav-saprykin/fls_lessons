@@ -265,7 +265,7 @@ body {
 
 .item-product__image:hover {
   transition: all 0.3s;
-  scale: 1.03;
+  transform: scale(1.03);
 }
 
 .item-product__image img {
@@ -324,7 +324,7 @@ body {
 
 .item-product__link:hover {
   transition: all 0.3s;
-  scale: 1.2;
+  transform: scale(1.2);
 }
 
 /* wishlist  */
