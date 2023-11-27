@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lesson 16</title>
+	</head>
+	<body>
+    <div class="wrapper">
+      <header class="header">
+        Home work 16
+      </header>
+
+    
+      <main class="page">
+
+        <div class="section-contact contact">
+          <div class="contact__container">
+              <h2 class="contact__subtitle">Contact Us</h2>
+              <h1 class="contact__title">Request A Call Back !</h1>
+              <form
+                class="contact__form form"
+                action="#"
+                method="GET"
+                enctype="multipart/form-data"
+                id="some-form"
+                 
+                >
+                <!-- додаємо тіло форми де будуть всі поля -->
+                <div class="form__body">
+    
+                  <!-- додаємо один за одним поля в обгортці,
+                    не робимо жодних додатковик конструкцій по типу два поля в одній обгортці з класами row чи line -->
+                  <div class="form__item">
+                    <input
+                      autocomplete="on"
+                      name="name"
+                      placeholder="Your Name"
+                      type="text"
+                    >
+                  </div>
+    
+                  <div class="form__item">
+                    <input
+                      autocomplete="on"
+                      name="mail"
+                      placeholder="Email Address"
+                      type="email"
+                    >
+                  </div>
+    
+                  <div class="form__item">
+                    <input
+                      autocomplete="on"
+                      name="phone"
+                      placeholder="Phone Number"
+                      type="tel"
+                      >
+                  </div>
+    
+                  <div class="form__item">
+                    <input
+                      autocomplete="on"
+                      name="subject"
+                      placeholder="Subject"
+                      type="text"
+                      minlength="3"
+                      required
+                    >
+                  </div>
+    
+                  <!-- додаємо модифікатор для textarea чи окремий клас щоб стилізувати його  -->
+                  <div class="form__item form__item--textarea">
+                    <textarea
+                      class="form__textarea"
+                      name="Message..."
+                      placeholder="Message..."
+                      autocomplete="off"
+                    >
+                    </textarea>
+                  </div>
+    
+                </div>
+                
+                <button
+                  form="some-form"
+                  type="submit"
+                  class="form__button"
+                >
+                Submit
+                </button>
+              </form>
+          </div>
+        </div>
+
+        <div class="section-info info">
+          <div class="info-container">
+            <h2 class="info__title">My Info</h2>
+            <h1 class="info__subtitle">Add Address</h1>
+
+            <form
+              class="info__form form"
+              action="#"
+              method="GET"
+              enctype="multipart/form-data"
+              id="info-form"
+              >
+              <div class="info__body">
+
+                <div class="info__item item">
+                  <div class="item__form-title">First Name *</div>
+                  <input
+                    autocomplete="on"
+                    name="first-name"
+                    placeholder="First Name"
+                    type="text"
+                    required
+                    minlength="3"
+                  >
+                </div>
+
+                <div class="info__item item">
+                  <div class="item__form-title">Last Name *</div>
+                  <input
+                    autocomplete="on"
+                    name="last-name"
+                    placeholder="Last Name"
+                    type="text"
+                    required
+                    minlength="3"
+                  >
+                </div>
+
+                <div class="info__item item">
+                  <div class="item__form-title">Country / Region *</div>
+                  <input
+                    autocomplete="on"
+                    name="region"
+                    placeholder="Country / Region"
+                    type="text"
+                    required
+                    minlength="3"
+                  >
+                </div>
+
+                <div class="info__item item">
+                  <div class="item__form-title">Company Name</div>
+                  <input
+                    autocomplete="on"
+                    name="company-name"
+                    placeholder="Company (optional)"
+                    type="text"
+                  >
+                </div>
+
+                <div class="info__item item">
+                  <div class="item__form-title">Street Address *</div>
+                  <input
+                    autocomplete="on"
+                    name="address"
+                    placeholder="House number and street name"
+                    type="text"
+                  >
+                </div>
+
+                <div class="info__item item">
+                  <div class="item__form-title">Apt, suite, unit</div>
+                  <input
+                    autocomplete="on"
+                    name="Apt"
+                    placeholder="apartment, suite, unit, etc. (optional)"
+                    type="text"
+                    required
+                    minlength="3"
+                  >
+                </div>
+
+                <div class="info__item item">
+                  <div class="item__form-title">City *</div>
+                  <input
+                    autocomplete="on"
+                    name="region"
+                    placeholder="Town / City"
+                    type="text"
+                    required
+                    minlength="3"
+                  >
+                </div>
+
+                <div class="info__item item">
+                  <div class="item__form-title">State *</div>
+                  <input
+                    autocomplete="on"
+                    name="state"
+                    placeholder="State"
+                    type="text"
+                    required
+                    minlength="3"
+                  >
+                </div>
+
+                <div class="info__item item">
+                  <div class="item__form-title">Phone *</div>
+                  <input
+                    autocomplete="on"
+                    name="phone"
+                    placeholder="Phone"
+                    type="tel"
+                    required
+                    minlength="10"
+                  >
+                </div>
+
+                <div class="info__item item">
+                  <div class="item__form-title">Postal Code *</div>
+                  <input
+                    autocomplete="on"
+                    name="postal-code"
+                    placeholder="Postal Code*"
+                    type="number"
+                    required
+                    minlength="3"
+                  >
+                </div>
+
+                <div class="info__item info__item--textarea item">
+                  <div class="item__form-title">Delivery Instruction *</div>
+                  <textarea
+                    class="item__textarea"
+                    name="Delivery-instruction"
+                    placeholder="Delivery Instruction"
+                    type="text"
+                  >
+                  </textarea>
+
+                </div>
+
+                <div class="info__item info__item--checkbox item">
+                  <input
+                    id="shipping"
+                    class="info__input info__input--checkbox"
+                    required autocomplete="off"
+                    name="shipping"
+                    type="checkbox"
+                  >
+                  <label class="item__checkbox" for="shipping">Set as default shipping address</label>
+                </div>
+
+                <div class="info__item info__item--checkbox item">
+                  <input
+                    id="billing"
+                    class="info__input info__input--checkbox"
+                    required autocomplete="off"
+                    name="billing"
+                    type="checkbox"
+                  >
+                  <label class="item__checkbox" for="billing">Set as default billing address</label>
+                </div>
+
+              </div>
+
+              <div class="info__button info__button--save">
+                <button
+                  form="info-form"
+                  type="submit"
+                  class="info__button-submit"
+              >
+              Save
+              </button>
+              </div>
+
+              <div class="info__button info__button--cancel">
+                <button
+                  form="info-form"
+                  type="reset"
+                  class="info__button-reset"
+                >
+                  Cancel
+                </button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+      </main>
+    
+      
+      <footer class="footer">
+        Thank you!
+      </footer>
+  </div>
+
+	</body>
+</html>
