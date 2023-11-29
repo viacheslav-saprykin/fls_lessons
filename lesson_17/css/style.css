@@ -18,19 +18,21 @@
   font-size: 30px;
   color: black;
   font-weight: 700;
-  background-color: darkgray;
 }
 
 [class*="__container"] {
 	max-width: 1430px;
 	margin: 0 auto;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding: 15px;
   font-family: 'DM Serif Text', serif;
 }
 
 .section-jewellery {
     background: #FEFAF4 url("../img/05-image.webp") right 400px no-repeat;
+  }
+
+  .section-jewellery:not(:last-child) {
+    margin-bottom: 100px;
   }
 
 .jewellery__title {
@@ -141,11 +143,20 @@
 
 @media(max-width: 820px) {
   .jewellery__products {
-    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .jewellery__title:not(:last-child) {
+    margin-bottom: 7px;
+  }
+
+  .jewellery__subtitle:not(:last-child) {
+    margin-bottom: 12px;
   }
 
   .jewellery__item {
     flex: 1 0 50%;
+    justify-content: center;
   }
 
   .jewellery__title {
@@ -161,7 +172,15 @@
 
 @media(max-width: 390px) {
   .jewellery__products {
-    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .jewellery__title:not(:last-child) {
+    margin-bottom: 7px;
+  }
+
+  .jewellery__subtitle:not(:last-child) {
+    margin-bottom: 12px;
   }
 
   .jewellery__item {
@@ -170,6 +189,142 @@
 
   .jewellery__title {
     font-size: 25px;
+  }
+
+  .jewellery__subtitle {
+    font-size: 15px;
+  }
+}
+
+/* ========================================================= */
+
+.section-rings {
+  margin-bottom: 100px;
+}
+.rings__title {
+  color: #291403;
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+}
+
+.rings__title:not(:last-child) {
+  margin-bottom: 27px;
+}
+
+.rings__products {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100%;
+  column-gap: 5%;
+}
+
+.rings__products:not(:last-child) {
+  margin-bottom: 165px;
+}
+
+.rings__subtitle {
+  color: #818181;
+  text-align: center;
+  font-family: 'Cormorant Infant', serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.40;
+}
+
+.products__image {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 271 / 270;
+  object-fit: cover;
+
+  transition: all 0.5s;
+}
+
+.products__image:hover {
+  transform: scale(1.025);
+  transition: all 0.3s;
+}
+
+
+/* .products__item a {
+  margin-bottom: 57px;
+} */
+
+.products__item a:first-child {
+	margin-bottom: 257px;
+} 
+
+
+.products__content {
+  color: #000;
+  font-family: 'Cormorant Infant', serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.products__content:not(:last-child) {
+  margin-bottom: 76px;
+}
+
+.products__title:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.products__price {
+  transition: 0.3s ease;
+}
+
+.products__price:hover {
+  color: #FF7A49;
+}
+
+.rings__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rings__link {
+  display: block;
+  padding: 12px 42px;
+  background: #FF7A49;
+  color: #FFF;
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.87;
+  transition: .3s ease;
+}
+
+.rings__link:hover {
+  color:  #FF7A49;
+  background: #FFF;
+  border: solid 1px #FF7A49;
+}
+
+@media(max-width: 770px) {
+  .rings__products {
+    flex-wrap: wrap;
+  }
+
+  .rings__title:not(:last-child) {
+    margin-bottom: 7px;
+  }
+
+  .rings__subtitle:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  .jewellery__item {
+    flex: 1 0 50%;
+    justify-content: center;
+  }
+
+  .jewellery__title {
+    font-size: 30px;
   }
 
   .jewellery__subtitle {
