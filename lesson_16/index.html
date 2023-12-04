@@ -73,8 +73,7 @@
                       name="Message..."
                       placeholder="Message..."
                       autocomplete="off"
-                    >
-                    </textarea>
+                    ></textarea>
                   </div>
     
                 </div>
@@ -105,7 +104,7 @@
               <div class="info__body">
 
                 <div class="info__item item">
-                  <div class="item__form-title">First Name *</div>
+                  <label class="item__form-title" for="first-name">First Name *</label>
                   <input
                     autocomplete="on"
                     name="first-name"
@@ -113,11 +112,12 @@
                     type="text"
                     required
                     minlength="3"
+                    id="first-name"
                   >
                 </div>
 
                 <div class="info__item item">
-                  <div class="item__form-title">Last Name *</div>
+                  <label class="item__form-title" for="last-name">Last Name *</label>
                   <input
                     autocomplete="on"
                     name="last-name"
@@ -125,11 +125,12 @@
                     type="text"
                     required
                     minlength="3"
+                    id="last-name"
                   >
                 </div>
 
                 <div class="info__item item">
-                  <div class="item__form-title">Country / Region *</div>
+                  <label class="item__form-title" for="region">Country / Region *</label>
                   <input
                     autocomplete="on"
                     name="region"
@@ -137,31 +138,34 @@
                     type="text"
                     required
                     minlength="3"
+                    id="region"
                   >
                 </div>
 
                 <div class="info__item item">
-                  <div class="item__form-title">Company Name</div>
+                  <label class="item__form-title" for="company-name">Company Name</label>
                   <input
                     autocomplete="on"
                     name="company-name"
                     placeholder="Company (optional)"
                     type="text"
+                    id="company-name"
                   >
                 </div>
 
                 <div class="info__item item">
-                  <div class="item__form-title">Street Address *</div>
+                  <label class="item__form-title" for="address">Street Address *</label>
                   <input
                     autocomplete="on"
                     name="address"
                     placeholder="House number and street name"
                     type="text"
+                    id="address"
                   >
                 </div>
 
                 <div class="info__item item">
-                  <div class="item__form-title">Apt, suite, unit</div>
+                  <label class="item__form-title" for="Apt">Apt, suite, unit</label>
                   <input
                     autocomplete="on"
                     name="Apt"
@@ -169,11 +173,12 @@
                     type="text"
                     required
                     minlength="3"
+                    id="Apt"
                   >
                 </div>
 
                 <div class="info__item item">
-                  <div class="item__form-title">City *</div>
+                  <label class="item__form-title" for="region">City *</label>
                   <input
                     autocomplete="on"
                     name="region"
@@ -181,23 +186,22 @@
                     type="text"
                     required
                     minlength="3"
+                    id="region"
                   >
                 </div>
 
                 <div class="info__item item">
-                  <div class="item__form-title">State *</div>
-                  <input
-                    autocomplete="on"
-                    name="state"
-                    placeholder="State"
-                    type="text"
-                    required
-                    minlength="3"
-                  >
+                  <label class="item__form-title" for="state">State*</label>
+                  <select class="item__form-title item__form-title--state" name="state" id="state" required placeholder="State">
+                    <option value="">State</option>
+                    <option value="">Alaska</option>
+                    <option value="">Louisiana</option>
+                    <option value="">Missouri</option>
+                  </select>
                 </div>
 
                 <div class="info__item item">
-                  <div class="item__form-title">Phone *</div>
+                  <label class="item__form-title" for="phone">Phone *</label>
                   <input
                     autocomplete="on"
                     name="phone"
@@ -205,52 +209,55 @@
                     type="tel"
                     required
                     minlength="10"
+                    id="phone"
                   >
                 </div>
 
                 <div class="info__item item">
-                  <div class="item__form-title">Postal Code *</div>
+                  <label class="item__form-title" for="postal-code">Postal Code *</label>
                   <input
                     autocomplete="on"
                     name="postal-code"
                     placeholder="Postal Code*"
                     type="number"
                     required
+                    id="postal-code"
                   >
                 </div>
 
                 <div class="info__item info__item--textarea item">
-                  <div class="item__form-title">Delivery Instruction *</div>
+                  <div class="item__form-title">Delivery Instruction</div>
                   <textarea
                     class="item__textarea"
                     name="Delivery-instruction"
                     placeholder="Delivery Instruction"
-                  >
-                  </textarea>
+                  ></textarea>
 
                 </div>
 
-                <div class="info__item info__item--checkbox item">
+                <label class="info__item info__item--checkbox item" for="shipping">
                   <input
                     id="shipping"
                     class="info__input info__input--checkbox"
                     required
                     name="shipping"
                     type="checkbox"
+                    id="shipping"
                   >
                   <label class="item__checkbox" for="shipping">Set as default shipping address</label>
-                </div>
+                </label>
 
-                <div class="info__item info__item--checkbox item">
+                <label class="info__item info__item--checkbox item" for="checkbox">
                   <input
                     id="billing"
                     class="info__input info__input--checkbox"
                     required
                     name="billing"
                     type="checkbox"
+                    id="checkbox"
                   >
                   <label class="item__checkbox" for="billing">Set as default billing address</label>
-                </div>
+                </label>
 
               </div>
 
