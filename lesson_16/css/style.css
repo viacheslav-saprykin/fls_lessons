@@ -234,6 +234,11 @@ input:focus {
   line-height: normal;
 }
 
+select:focus,
+input:focus {
+  outline: 2px solid #8A33FD;
+}
+
 .info__item--textarea {
   min-height: 200px;
   flex: 1 1 100%;
