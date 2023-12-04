@@ -178,21 +178,21 @@
                 </div>
 
                 <div class="info__item item">
-                  <label class="item__form-title" for="region">City *</label>
+                  <label class="item__form-title" for="city">City *</label>
                   <input
                     autocomplete="on"
-                    name="region"
+                    name="city"
                     placeholder="Town / City"
                     type="text"
                     required
                     minlength="3"
-                    id="region"
+                    id="city"
                   >
                 </div>
 
                 <div class="info__item item">
                   <label class="item__form-title" for="state">State*</label>
-                  <select class="item__form-title item__form-title--state" name="state" id="state" required placeholder="State">
+                  <select class="item__form-title item__form-title--state" name="state" id="state" required>
                     <option value="">State</option>
                     <option value="">Alaska</option>
                     <option value="">Louisiana</option>
@@ -235,29 +235,27 @@
 
                 </div>
 
-                <label class="info__item info__item--checkbox item" for="shipping">
+                <div class="info__item info__item--checkbox item" for="shipping">
                   <input
                     id="shipping"
                     class="info__input info__input--checkbox"
                     required
                     name="shipping"
                     type="checkbox"
-                    id="shipping"
                   >
                   <label class="item__checkbox" for="shipping">Set as default shipping address</label>
-                </label>
+                </div>
 
-                <label class="info__item info__item--checkbox item" for="checkbox">
+                <div class="info__item info__item--checkbox item" for="billing">
                   <input
                     id="billing"
                     class="info__input info__input--checkbox"
                     required
                     name="billing"
                     type="checkbox"
-                    id="checkbox"
                   >
                   <label class="item__checkbox" for="billing">Set as default billing address</label>
-                </label>
+                </div>
 
               </div>
 
