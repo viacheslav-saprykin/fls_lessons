@@ -122,15 +122,10 @@
   line-height: 1.60;
   flex-grow: 1;
   flex-shrink: 0;
-  
 }
 
 .item-products-jew__text:not(:last-child) {
   margin-bottom: 16px;
-}
-
-.jew-products__coloumn:not(:last-child) {
-  margin-bottom: 20px;
 }
 
 .item-products-jew__link {
@@ -463,8 +458,6 @@
   flex-wrap: wrap;
 }
 
-
-
 .earring__good {
   transition: .3s ease;
 }
@@ -536,7 +529,6 @@
 }
 
 @media(max-width: 767.98px) {
-
   .earrings__container {
     padding: 44px 55px;
   }
