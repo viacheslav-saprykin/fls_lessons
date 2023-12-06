@@ -336,7 +336,7 @@
   border: solid 1px #FF7A49;
 }
 
-@media(max-width: 767.98) {
+@media(max-width: 767.98px) {
   .rings__products {
     flex-wrap: wrap;
     justify-content:center;
