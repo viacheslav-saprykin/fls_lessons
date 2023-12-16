@@ -71,7 +71,7 @@ $thirdColor: #3C4242;
 		}
 
 		// .brands__subtitle--color
-      &__subtitle--color {
+      &__subtitle-color {
         color: $secondColor;
         font-weight: 700;
       }
@@ -141,10 +141,6 @@ $thirdColor: #3C4242;
 // second block
 
 
-.section-shop {
-  
-}
-
 .shop {
   
 		// .shop__container
@@ -196,9 +192,6 @@ $thirdColor: #3C4242;
 
 		// .shop__item
 
-		&__item {
-      display: grid;
-		}
 }
 .item-shop {
   position: relative;
@@ -273,6 +266,7 @@ $thirdColor: #3C4242;
       font-size: 14px;
       font-weight: 400;
       line-height: normal;
+      
 		}
 
 		// .item-shop__price

@@ -150,7 +150,7 @@ textarea {
 .brands__subtitle:not(:last-child) {
   margin-bottom: 67px;
 }
-.brands__subtitle--color {
+.brands__subtitle-color {
   color: #FBD103;
   font-weight: 700;
 }
@@ -247,9 +247,6 @@ textarea {
      -moz-column-gap: 36px;
           column-gap: 36px;
   row-gap: 20px;
-}
-.shop__item {
-  display: grid;
 }
 
 .item-shop {
