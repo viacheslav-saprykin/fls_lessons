@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@300;400;500;700;800&family=Poppins:wght@400;500;600;700&display=swap');
+
+@font-face {
+	font-family: 'Causten-Regular';
+	src: url("fonts/Causten-Regular.woff2") format("woff2"), 
+			 url("fonts/Causten-Regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Causten-Regular';
+	src: url("fonts/Causten-Bold.woff2") format("woff2"), 
+			 url("fonts/Causten-Bold.woff") format("woff");
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Core-Sans-C';
+	src: url("fonts/CoreSansC-55Medium.woff2") format("woff2"), 
+			 url("fonts/CoreSansC-55Medium.woff") format("woff");
+	font-display: swap;
+	font-weight: 550;
+	font-style: normal;
+}
