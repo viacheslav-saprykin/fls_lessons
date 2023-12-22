@@ -1,0 +1,274 @@
+
+.header {
+
+  // .header__container
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    min-height: 108px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  // .header__logo
+  &__logo {
+    img {
+      min-width: 50px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      aspect-ratio: 91 / 45;
+
+      position: relative;
+      z-index: 5;
+    }
+
+  }
+
+  // .header__actions
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+
+    position: relative;
+    z-index: 5;
+
+  }
+
+}
+
+.icon-menu {
+  display: none;
+}
+
+.menu {
+
+// flex: 1 1 auto;
+  // .menu__body
+  &__body {
+
+  }
+
+  // .menu__list
+  &__list {
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  // .menu__item
+  &__item {
+  }
+
+  // .menu__link
+  &__link {
+    color: $colorNav;
+    font-family: 'Causten-Regular';
+    font-size: 22px;
+    font-weight: 400;
+    line-height: normal;
+    transition: all .3s;
+   
+    &--active {
+      color: $thirdColor;
+      font-weight: 700;
+    }
+  }
+
+  &__link:hover {
+    color: $thirdColor;
+    text-decoration: underline;
+  }
+
+
+}
+.search {
+  display: flex;
+  flex-shrink: 1;
+  flex-grow: 0;
+  flex-basis: 287px;
+  position: relative;
+  z-index: 5;
+
+  // .search__input
+  &__input {
+    width: 100%;
+    padding: 12px 20px 12px 40px;
+    height: 44px;
+
+    border-radius: 8px;
+    background: $colorSearch;
+    color: $colorSearchtitle;
+    font-family: 'Causten-Regular';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+
+    background-image: url('../img/01-05-Image.svg');
+    background-repeat: no-repeat;
+    background-position: 12px;
+    background-size: 20px;
+
+    &::placeholder {
+      color: $colorSearchtitle;
+    }
+
+    &:focus::placeholder {
+      color: $colorSearchtitle;
+    }
+
+    &:focus {
+      outline: 2px solid $colorBorder; // Регулювання рамки пошуку;
+    }
+  }
+
+}
+
+.actions-header {
+  // .actions-header__item
+  &__item {
+    flex: 0 0 44px;
+    transition: all .3s ease;
+  }
+
+  &__item:hover {
+    transform: scale(1.2);
+  }
+
+  &__item img {
+  max-width: 100%;
+  }
+}
+
+@media (max-width: 1075px ) {
+  .header__container {
+    min-height: 50px;
+  
+  }
+  .menu__body {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    top: 0;
+    left: -100%;
+    transition: left 0.3s;
+    background-color: $colorMobilemenu;
+    padding: 80px 15px 30px 15px;
+  }
+
+  .menu__body::before {
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 54px;
+    top: 0;
+    left: 100%;
+    z-index: 3;
+    transition: left 0.3s;
+    background-color: $colorBorder;
+  }
+
+  .menu-open .menu__body,
+  .menu-open .menu__body::before {
+    left: 0;
+  }
+
+  .menu__list {
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 20px;
+  }
+
+  .menu__link {
+    font-size: 28px;
+  }
+
+  .icon-menu {
+    width: 30px;
+    display: block;
+    flex: 0 0 30px;
+    height: 18px;
+    position: relative;
+    z-index: 5;
+
+    &::before {
+      content: '';
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      background-color: $colorSearchtitle;
+      top: 0;
+      transition: all 0.3s;
+    }
+    &::after {
+      content: '';
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      background-color: $colorSearchtitle;
+      bottom: 0;
+      transition: all 0.3s;
+    }
+
+    span {
+      content: '';
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      background-color: $colorSearchtitle;
+      top: 50%;
+      margin-top: -1px;
+      transition: all 0.3s;
+    }
+
+  }
+  .menu-open .icon-menu span {
+    transform: scale(0);
+  }
+
+  .menu-open .icon-menu::before {
+    transform: rotate(-45deg);
+    top: 50%;
+    margin-top: -1px;
+  }
+  .menu-open .icon-menu::after {
+    transform: rotate(45deg);
+    bottom: 50%;
+    margin-bottom: -1px;
+  }
+
+  .menu-open body {
+    overflow: hidden;
+  }
+}
+
+
+@media (max-width: 460px ) {
+  .header__container {
+    gap: 5px;
+  
+    .header__actions {
+      gap: 3px;
+    }
+  }
+
+  .search {
+    flex-basis: 150px;
+  }
+
+  .search__input::placeholder {
+    color: transparent;
+  }
+
+}
+
