@@ -426,7 +426,7 @@ textarea {
   font-weight: 700;
 }
 .item-footer__title:not(:last-child) {
-  margin-bottom: 15 px;
+  margin-bottom: 15px;
 }
 .item-footer__item {
   font-size: 18px;
@@ -439,8 +439,9 @@ textarea {
       flex-wrap: wrap;
 }
 .item-footer__item:not(:last-child) {
-  margin-bottom: 5 px;
+  margin-bottom: 5px;
 }
+
 .links-footer {
   display: -webkit-box;
   display: -ms-flexbox;
