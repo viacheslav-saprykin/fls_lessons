@@ -1,0 +1,150 @@
+// Mathematical library
+@use "sass:math";
+
+// Reset basic style
+@import "_reset.scss";
+
+// Fonts
+@import "_fonts.scss";
+
+// Components
+@import "_common.scss";
+
+// Functions
+@import "_functions.scss";
+
+// Variables
+@import "_variables.scss";
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  > main {
+    flex-grow: 1;
+  }
+}
+
+body {
+  color: black;
+  background-color: rgb(92, 90, 90); // приємніший для очей
+  font-size: toRem(16); // розміру шрифту, замість px в rem
+}
+
+[class*="__container"] {
+  max-width: toRem(1250);
+  padding-left: toRem(15);;
+  padding-right: toRem(15);
+  margin: 0 auto;
+}
+
+.header {
+
+		// .header__container
+		&__container {
+      background: $headerBackColor;
+      min-height: toRem(60);
+		}
+
+		// .header__contacts
+		&__contacts {
+      padding: toRem(20) 0;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: toRem(10);
+  
+      color: $fontsColor;
+      font-family: "Inter";
+      font-size: toRem(14);
+      font-weight: 400;
+      line-height: normal;
+		}
+
+		// .header__location
+		&__location {
+      display: flex;
+      column-gap: toRem(53);
+      flex-wrap: wrap;
+      row-gap: toRem(10);
+		}
+
+		// .header__address
+		&__address {
+      display: flex;
+      column-gap: toRem(9);
+
+		}
+
+		// .header__address-link
+		&__address-link {
+      flex-grow: 0;
+      flex-shrink: 1;
+
+		}
+
+		// .header__address-icon
+		&__address-icon {
+      max-width: toRem(30);
+      max-height: toRem(30);
+		}
+
+		// .header__mail
+		&__mail {
+      display: flex;
+      column-gap: toRem(11);
+		}
+
+		// .header__mail-link
+		&__mail-link {
+
+		}
+
+		// .header__mail-icon
+		&__mail-icon {
+      max-width: toRem(30);
+      max-height: toRem(30);
+		}
+
+		// .header__media
+		&__media {
+      display: flex;
+      column-gap: toRem(50);
+      flex-wrap: wrap;
+      row-gap: toRem(10);
+		}
+
+		// .header__time
+		&__time {
+      display: flex;
+      column-gap: toRem(4);
+		}
+
+		// .header__time-link
+		&__time-link {
+		}
+
+		// .header__time-icon
+		&__time-icon {
+      max-width: toRem(30);
+      max-height: toRem(30);
+		}
+
+		// .header__social
+		&__social {
+      display: flex;
+      column-gap: toRem(16);
+		}
+
+		// .header__social-link
+		&__social-link {
+		}
+
+		// .header__social-icon
+		&__social-icon {
+      max-width: toRem(25);
+      max-height: toRem(25);
+		}
+}
