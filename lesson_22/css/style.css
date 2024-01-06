@@ -94,7 +94,7 @@ textarea {
   position: relative;
   z-index: 2;
 }
-@media (max-width: 965px) {
+@media (max-width: 997px) {
   .info-header__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -269,7 +269,7 @@ textarea {
 .body-header__icon--violet {
   color: #6B77E5;
 }
-@media (max-width: 965px) {
+@media (max-width: 997px) {
   .menu-body {
     position: fixed;
     width: 100%;
@@ -279,8 +279,18 @@ textarea {
     left: -100%;
     -webkit-transition: left 0.3s;
     transition: left 0.3s;
-    padding: 125px 15px 30px 15px;
+    padding: 200px 15px 30px 15px;
     background-color: lightgray;
+  }
+  .menu-body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 150px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #37393F;
   }
 }
 
@@ -298,7 +308,7 @@ textarea {
           column-gap: 2.5rem;
   row-gap: 0.3125rem;
 }
-@media (max-width: 960px) {
+@media (max-width: 997px) {
   .menu-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -325,7 +335,7 @@ textarea {
     color: #6B77E5;
   }
 }
-@media (max-width: 960px) {
+@media (max-width: 997px) {
   .menu-link {
     font-size: 1.25rem;
   }
@@ -374,7 +384,7 @@ textarea {
   transition: all 0.5s ease;
   pointer-events: none;
 }
-@media (max-width: 960px) {
+@media (max-width: 997px) {
   .sub-menu {
     position: relative;
     visibility: visible;
@@ -391,7 +401,7 @@ textarea {
   padding: 15px;
   background-color: #37393F;
 }
-@media (max-width: 960px) {
+@media (max-width: 997px) {
   .sub-menu__list {
     width: 100%;
     border-radius: 5px;
@@ -440,6 +450,7 @@ textarea {
 
 .icon-menu {
   display: none;
+  width: 30px;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 30px;
           flex: 0 0 30px;
@@ -455,6 +466,8 @@ textarea {
   left: 0;
   background-color: black;
   top: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .icon-menu::after {
   content: "";
@@ -464,10 +477,48 @@ textarea {
   left: 0;
   background-color: black;
   bottom: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
-@media (max-width: 960px) {
+.icon-menu span {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  margin-top: -1px;
+  background-color: black;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+@media (max-width: 997px) {
   .icon-menu {
     display: block;
+  }
+}
+
+@media (max-width: 997px) {
+  .menu-open .menu-body {
+    left: 0;
+  }
+  .menu-open .icon-menu span {
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+  }
+  .menu-open .icon-menu::before {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: 50%;
+    margin-top: -1px;
+  }
+  .menu-open .icon-menu::after {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    bottom: 50%;
+    margin-bottom: -1px;
   }
 }
 
