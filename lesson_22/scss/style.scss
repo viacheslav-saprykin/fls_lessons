@@ -32,13 +32,13 @@
 
 body {
   color: black;
-  background-color: rgb(92, 90, 90); // приємніший для очей
+  // background-color: rgb(92, 90, 90); // приємніший для очей
   font-size: toRem(16); // розміру шрифту, замість px в rem
 }
 
 [class*="__container"] {
   max-width: toRem(1250);
-  padding-left: toRem(15);;
+  padding-left: toRem(15);
   padding-right: toRem(15);
   margin: 0 auto;
 }
