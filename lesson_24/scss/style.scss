@@ -1,0 +1,60 @@
+// Mathematical library
+@use "sass:math";
+
+// Reset basic style
+@import "_reset.scss";
+
+// Fonts
+@import '_fonts.scss';
+
+// Components
+@import '_common.scss';
+
+// Functions
+@import '_functions.scss';
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: toRem(20);
+
+  > main {
+    flex-grow: 1;
+  }
+}
+
+body {
+  color: black;
+  background: rgb(80,201,198);
+background: linear-gradient(180deg, rgba(80,201,198,1) 0%, rgba(221,209,28,0.3678658963585434) 42%, rgba(27,153,218,1) 100%);
+  font-size: toRem(20); // розміру шрифту, замість px в rem
+}
+
+header,
+footer,
+.hero {
+  font-size: toRem(16);
+  max-width: toRem(1250);
+  padding-left: toRem(15);
+  padding-right: toRem(15);
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  &__text {
+    color: yellow;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
